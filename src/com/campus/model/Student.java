@@ -78,7 +78,7 @@ public class Student {
         System.out.print("Marks: ");
     }
 
-    public void displaystudentInfo(boolean showMarks) {
+    public void displayStudentInfo(boolean showMarks) {
         displayStudentInfo();
 
         if(showMarks) {
