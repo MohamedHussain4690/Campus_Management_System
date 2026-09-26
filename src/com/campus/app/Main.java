@@ -23,8 +23,6 @@ public class Main {
             sc.nextLine();
         }
         Student student = new Student(studentid,studentname,age,department,marks);
-        Student student1 = new Student(studentid,studentname,age,department,marks);
-        
         student.displayStudentInfo(true);
         Student.displayStudentCount();
         StudentService studentService = new StudentService();
