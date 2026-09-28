@@ -1,8 +1,9 @@
 package com.campus.model;
+import com.campus.contract.StudentOperation;
 
 // encapsulation - data hiding
 // instance variables
-public class Student {
+public abstract class Student implements StudentOperation {
     private int studentid;
     private String studentname;
     private int studentage;
@@ -78,6 +79,7 @@ public class Student {
         System.out.print("Marks: ");
     }
 
+
     public void displayStudentInfo(boolean showMarks) {
         displayStudentInfo();
 
@@ -85,7 +87,7 @@ public class Student {
             System.out.println("Marks: " + java.util.Arrays.toString(marks));
         }
     }
-
+    public abstract void studentType();
 // static method - belong to class not object
     public static void displayStudentCount() {
         System.out.println("Total Students: " + studentCount);
