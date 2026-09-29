@@ -22,6 +22,8 @@
 
         <maven.compiler.target>17</maven.compiler.target>
 
+        <jetty.http.port>8080</jetty.http.port>
+
         <project.build.sourceEncoding>
             UTF-8
         </project.build.sourceEncoding>
@@ -79,7 +81,7 @@
                 <version>12.0.14</version>
                 <configuration>
                     <httpConnector>
-                        <port>8080</port>
+                        <port>${jetty.http.port}</port>
                     </httpConnector>
                     <webApp>
                         <contextPath>/</contextPath>
