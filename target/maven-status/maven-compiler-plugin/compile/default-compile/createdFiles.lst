@@ -1,2 +1,4 @@
+com\campus\listener\CampusSession.class
 com\campus\controller\StudentServlet.class
+com\campus\filter\LoggingFilter.class
 com\campus\services\StudentService.class
