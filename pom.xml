@@ -18,9 +18,9 @@
 
     <properties>
 
-        <maven.compiler.release>25</maven.compiler.release>
+        <maven.compiler.source>17</maven.compiler.source>
 
-        <jetty.http.port>8080</jetty.http.port>
+        <maven.compiler.target>17</maven.compiler.target>
 
         <project.build.sourceEncoding>
             UTF-8
@@ -40,6 +40,13 @@
 
             <scope>provided</scope>
 
+        </dependency>
+
+        <!-- postgresql jdbc driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.8</version>
         </dependency>
 
     </dependencies>
@@ -79,7 +86,7 @@
                 <version>12.0.14</version>
                 <configuration>
                     <httpConnector>
-                        <port>${jetty.http.port}</port>
+                        <port>8080</port>
                     </httpConnector>
                     <webApp>
                         <contextPath>/</contextPath>
